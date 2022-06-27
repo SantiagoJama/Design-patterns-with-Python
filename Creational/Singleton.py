@@ -1,4 +1,4 @@
-class SingletonCore(type):
+class SingletonCoreV1(type):
     __instances = {}
 
     def __call__(cls, *args, **kwargs):
@@ -8,11 +8,23 @@ class SingletonCore(type):
         return cls.__instances[cls]
 
     @staticmethod
-    def all_instance():
-        print(SingletonCore.__instances)
+    def get_all_instance():
+        print(SingletonCoreV1.__instances)
 
 
-class Singleton(metaclass=SingletonCore):
-
+class SingletonV1(metaclass=SingletonCoreV1):
     def some(self):
         pass
+
+
+class SingletonCoreV2:
+    __singleton = None
+
+    def __new__(cls, *args, **kwargs):
+        if not cls.__singleton:
+            cls.__singleton = super(SingletonCoreV2, cls).__new__(cls, *args, **kwargs)
+        return cls.__singleton
+
+
+    def get_all_instances():
+        print(SingletonCoreV2.__singleton)
