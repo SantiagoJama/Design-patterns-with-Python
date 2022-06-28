@@ -1,34 +1,8 @@
-from Singleton import SingletonV1, SingletonCoreV2
-from FactoryMethodV1 import Factory
-from FactoryMethodV2 import FurnitureFactory
+from Creational.FactoryMethod.FactoryMethodV1 import Factory
+from Creational.FactoryMethod.FactoryMethodV2 import FurnitureFactory
 
 if __name__ == "__main__":
-    print("================== SINGLETON ===================")
-    obj1 = SingletonV1()
-    obj2 = SingletonV1()
-
-    if id(obj1) == id(obj2):
-        print("Both contain the same object ")
-    else:
-        print("Error in the implementation")
-
-    print(obj1)
-    print(obj2)
-    SingletonV1.get_all_instance()
-    print(type(SingletonV1.get_all_instance()))
-
-    print("****** USING SINGLETON V2 ********")
-    ob1 = SingletonCoreV2()
-    ob2 = SingletonCoreV2()
-
-    print(ob1)
-    print(ob2)
-    SingletonCoreV2.get_all_instances()
-
-
-
-    print()
-    print("==================== FACTORY METHOD ==============")
+    print("==================== FACTORY METHOD V1 ==============")
 
     my_product_from_factory = Factory()
     # Circle
@@ -48,7 +22,8 @@ if __name__ == "__main__":
     print()
     print()
 
-    print("================== FACTORY METHOD =====================")
+
+    print("================== FACTORY METHOD V2 =====================")
     print("----- Furniture Factory -----")
 
     furniture_factory = FurnitureFactory()
@@ -78,6 +53,4 @@ if __name__ == "__main__":
     wood_shelve_furniture = furniture_factory.create_my_furniture('shelve')
     wood_shelve_furniture.create_furniture('wood')
     print()
-
-
-
+    print()
