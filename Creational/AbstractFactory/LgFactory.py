@@ -9,7 +9,7 @@ class LgFactory(AbstractFactory):
         if tv_type.lower() == 'plasma':
             return PlasmaTv()
         elif tv_type.lower() == 'lcd':
-            return LcdTv
+            return LcdTv()
         elif tv_type.lower() == 'led':
             return LedTv()
         else:
