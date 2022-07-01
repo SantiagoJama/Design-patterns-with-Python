@@ -36,7 +36,7 @@ class Table(Furniture):
             print("what material?")
 
 
-class Shelve(Furniture):
+class Shelf(Furniture):
 
     def __init__(self):
         print("Shelve constructor")
@@ -62,7 +62,7 @@ class FurnitureFactory:
             return Table()
 
         elif furniture_type.lower() == 'shelve':
-            return Shelve()
+            return Shelf()
 
         else:
             return None

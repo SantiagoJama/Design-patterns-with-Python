@@ -12,5 +12,5 @@ Design patterns with Python
 
 
 #### Singleton
-![Singlen UML](Creational/UML/singleton.PNG)
+![Singleton UML](Creational/UML/Singleton.PNG)
 
