@@ -3,14 +3,22 @@ Design patterns with Python
 
 ## Creational
 
-#### Abstract Factory
-![Abstract factory UML](Creational/UML/AbstractFactory.PNG)
+#### Abstract Factory:
+![Abstract factory UML](UML/AbstractFactory.PNG)
 
 
-#### Factory Method
-![Factory Method UML](Creational/UML/FactoryMethod.PNG)
+#### Factory Method:
+![Factory Method UML](UML/FactoryMethod.PNG)
 
 
-#### Singleton
-![Singleton UML](Creational/UML/Singleton.PNG)
+#### Singleton:
+![Singleton UML](UML/Singleton.PNG)
+
+***
+## Structural 
+
+#### Adapter:
+![Adapter UML](UML/Adapter.PNG)
+
+
 
