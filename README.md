@@ -21,4 +21,8 @@ Design patterns with Python
 ![Adapter UML](UML/Adapter.PNG)
 
 
+#### Decorator
+![Decorator UML](UML/Decorator.PNG)
+
+
 
