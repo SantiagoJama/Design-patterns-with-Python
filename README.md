@@ -12,7 +12,7 @@ Design patterns with Python
 
 
 #### Singleton:
-![Singleton UML](UML/Singleton.PNG)
+![Singleton UML](UML/singleton.PNG)
 
 ***
 ## Structural 
